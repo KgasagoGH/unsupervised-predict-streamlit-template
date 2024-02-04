@@ -122,14 +122,14 @@ def main():
             {"name": "Iloh Fransisca", "role": "Web Developer",
              "bio": "Fransisca is a highly skilled web developer with a passion for creating engaging and user-friendly web applications. With a keen eye for design and a strong understanding of user experience, she brings creativity and innovation to our development team. Fransisca enjoys tackling complex challenges and turning them into elegant solutions.",
              "image": "resources\imgs\IMG_20240126_102843_362.jpg"},
-            {"name": "Mashoto Kgasago", "role": "Data Scientist",
+            {"name": "Mashoto Kgasago", "role": "Data Engineer",
              "bio": "Mashoto is a seasoned data scientist and the team lead for our movie recommendation project. With a background in machine learning and data analysis, Mashoto leverages advanced algorithms to provide accurate and personalized movie recommendations. His commitment to delivering data-driven insights contributes to the success of our recommendation system.",
              "image": "resources\imgs\mashoto.webp"},
             {"name": "Mkhosi Myeni", "role": "Project Manager",
              "bio": "Mkhosi is a results-oriented project manager with a proven track record of successfully leading and delivering complex projects. With strong leadership and communication skills, Mkhosi ensures seamless coordination among team members, stakeholders, and project goals. His strategic approach and attention to detail drive the project towards success.",
              "image": "resources\imgs\IMG_4552.jpg"},
         
-            {"name": "Jonathan Thomson", "role": "Data Analyst",
+            {"name": "Jonathan Thomson", "role": "Data Scientist",
              "bio": "Jonathan is a meticulous data analyst with a passion for transforming raw data into meaningful insights. His analytical skills and attention to detail help uncover valuable patterns and trends, contributing to informed decision-making. Jonathan's commitment to data accuracy and efficiency enhances our data analysis capabilities.",
              "image": "resources\imgs\WhatsApp_Image_2023-11-15_at_15.41.44_2706cb67.jpg"},
         
@@ -137,7 +137,7 @@ def main():
              "bio": "Justice is a dedicated data scientist with expertise in developing and implementing machine learning models. His analytical mindset and problem-solving abilities contribute to the continuous improvement of our recommendation algorithms. Justice is passionate about leveraging data science to enhance user experiences in the realm of movie recommendations.",
              "image": "resources\imgs\IMG_20240126_102843_362.jpg"},
         
-            {"name": "Faith Fhulufhelo", "role": "Machine Learning Specialist",
+            {"name": "Faith Fhulufhelo", "role": "Data Engineer",
              "bio": "Faith is a skilled machine learning specialist specializing in building advanced recommendation models. Her proficiency in machine learning algorithms and model optimization ensures that our recommendation system stays at the forefront of technology. Faith's commitment to pushing the boundaries of machine learning elevates our system's performance.",
              "image": "resources\imgs\IMG_20240126_102843_362.jpg"},
         
