@@ -116,49 +116,85 @@ def main():
 
     # Team Member Profiles
         st.header("Meet The Team")
+        with st.container():
+            col1, col2, col3 = st.columns(3)
+
+            with col1:
+                st.image('resources\imgs\IMG_20240126_102843_362.jpg', width= 200)
+                st.subheader("Iloh Fransisca")
+                st.caption("Web Developer")
+
+            with col2:
+                st.image('resources\imgs\mashoto.webp', width= 200)
+                st.subheader("Mashoto Kgasago")
+                st.caption("Data Engineer")
+                    
+            with col3:
+                st.image('resources\imgs\IMG_4552.jpg', width= 200)
+                st.subheader("Mkhosi Myeni")
+                st.caption("Project Manager")
+
+        with st.container():
+            col4, col5, col6 = st.columns(3)
+
+            with col4:
+                st.image('resources\imgs\WhatsApp_Image_2023-11-15_at_15.41.44_2706cb67.jpg', width= 200)
+                st.subheader("Jonathan Thomson")
+                st.caption("Data Scientist")
+
+            with col5:
+                st.image('resources\imgs\IMG_20240126_102843_362.jpg', width= 200)
+                st.subheader("Justice Mashako")
+                st.caption("Data Scientist")
+                    
+            with col6:
+                st.image('resources\imgs\IMG_20240126_102843_362.jpg', width= 200)
+                st.subheader("Faith Fhulufhelo")
+                st.caption("Data Engineer")
+
 
     
-        team_members = [
-            {"name": "Iloh Fransisca", "role": "Web Developer",
-             "bio": "Fransisca is a highly skilled web developer with a passion for creating engaging and user-friendly web applications. With a keen eye for design and a strong understanding of user experience, she brings creativity and innovation to our development team. Fransisca enjoys tackling complex challenges and turning them into elegant solutions.",
-             "image": "resources\imgs\IMG_20240126_102843_362.jpg"},
-            {"name": "Mashoto Kgasago", "role": "Data Engineer",
-             "bio": "Mashoto is a seasoned data scientist and the team lead for our movie recommendation project. With a background in machine learning and data analysis, Mashoto leverages advanced algorithms to provide accurate and personalized movie recommendations. His commitment to delivering data-driven insights contributes to the success of our recommendation system.",
-             "image": "resources\imgs\mashoto.webp"},
-            {"name": "Mkhosi Myeni", "role": "Project Manager",
-             "bio": "Mkhosi is a results-oriented project manager with a proven track record of successfully leading and delivering complex projects. With strong leadership and communication skills, Mkhosi ensures seamless coordination among team members, stakeholders, and project goals. His strategic approach and attention to detail drive the project towards success.",
-             "image": "resources\imgs\IMG_4552.jpg"},
+        #team_members = [
+         #   {"name": "Iloh Fransisca", "role": "Web Developer",
+          #   "bio": "Fransisca is a highly skilled web developer with a passion for creating engaging and user-friendly web applications. With a keen eye for design and a strong understanding of user experience, she brings creativity and innovation to our development team. Fransisca enjoys tackling complex challenges and turning them into elegant solutions.",
+           #  "image": "resources\imgs\IMG_20240126_102843_362.jpg"},
+            #{"name": "Mashoto Kgasago", "role": "Data Engineer",
+            # "bio": "Mashoto is a seasoned data scientist and the team lead for our movie recommendation project. With a background in machine learning and data analysis, Mashoto leverages advanced algorithms to provide accurate and personalized movie recommendations. His commitment to delivering data-driven insights contributes to the success of our recommendation system.",
+            # "image": "resources\imgs\mashoto.webp"},
+            #{"name": "Mkhosi Myeni", "role": "Project Manager",
+             #"bio": "Mkhosi is a results-oriented project manager with a proven track record of successfully leading and delivering complex projects. With strong leadership and communication skills, Mkhosi ensures seamless coordination among team members, stakeholders, and project goals. His strategic approach and attention to detail drive the project towards success.",
+             #"image": "resources\imgs\IMG_4552.jpg"},
         
-            {"name": "Jonathan Thomson", "role": "Data Scientist",
-             "bio": "Jonathan is a meticulous data analyst with a passion for transforming raw data into meaningful insights. His analytical skills and attention to detail help uncover valuable patterns and trends, contributing to informed decision-making. Jonathan's commitment to data accuracy and efficiency enhances our data analysis capabilities.",
-             "image": "resources\imgs\WhatsApp_Image_2023-11-15_at_15.41.44_2706cb67.jpg"},
+            #{"name": "Jonathan Thomson", "role": "Data Scientist",
+            # "bio": "Jonathan is a meticulous data analyst with a passion for transforming raw data into meaningful insights. His analytical skills and attention to detail help uncover valuable patterns and trends, contributing to informed decision-making. Jonathan's commitment to data accuracy and efficiency enhances our data analysis capabilities.",
+             #"image": "resources\imgs\WhatsApp_Image_2023-11-15_at_15.41.44_2706cb67.jpg"},
         
-            {"name": "Justice Mashako", "role": "Data Scientist",
-             "bio": "Justice is a dedicated data scientist with expertise in developing and implementing machine learning models. His analytical mindset and problem-solving abilities contribute to the continuous improvement of our recommendation algorithms. Justice is passionate about leveraging data science to enhance user experiences in the realm of movie recommendations.",
-             "image": "resources\imgs\IMG_20240126_102843_362.jpg"},
+            #{"name": "Justice Mashako", "role": "Data Scientist",
+             #"bio": "Justice is a dedicated data scientist with expertise in developing and implementing machine learning models. His analytical mindset and problem-solving abilities contribute to the continuous improvement of our recommendation algorithms. Justice is passionate about leveraging data science to enhance user experiences in the realm of movie recommendations.",
+             #"image": "resources\imgs\IMG_20240126_102843_362.jpg"},
         
-            {"name": "Faith Fhulufhelo", "role": "Data Engineer",
-             "bio": "Faith is a skilled machine learning specialist specializing in building advanced recommendation models. Her proficiency in machine learning algorithms and model optimization ensures that our recommendation system stays at the forefront of technology. Faith's commitment to pushing the boundaries of machine learning elevates our system's performance.",
-             "image": "resources\imgs\IMG_20240126_102843_362.jpg"},
+            #{"name": "Faith Fhulufhelo", "role": "Data Engineer",
+            # "bio": "Faith is a skilled machine learning specialist specializing in building advanced recommendation models. Her proficiency in machine learning algorithms and model optimization ensures that our recommendation system stays at the forefront of technology. Faith's commitment to pushing the boundaries of machine learning elevates our system's performance.",
+             #"image": "resources\imgs\IMG_20240126_102843_362.jpg"},
         
-    ]
+    #]
 
-        for member in team_members:
-            st.subheader(f"{member['name']} - {member['role']}")
+       # for member in team_members:
+        #    st.subheader(f"{member['name']} - {member['role']}")
         
         # Using st.columns to create a layout with two columns
-            col1, col2 = st.columns([1, 3])
+           # col1, col2 = st.columns([1, 3])
         
         # Display the image in the first column
-            with col1:
-                st.image(member['image'], caption=f"{member['name']}", use_column_width=True)
+            #with col1:
+             #   st.image(member['image'], caption=f"{member['name']}", use_column_width=True)
         
         # Display the bio in the second column
-            with col2:
-                st.write(member['bio'])
+            #with col2:
+             #   st.write(member['bio'])
         
         # Separator between team members
-            st.write("---")  
+            #st.write("---")  
 
     # Company Contact
         st.header("Contact Us")
@@ -332,11 +368,11 @@ def main():
  
          #Count of top cast members
         if eda_select == "Top Cast Members":
-            st.image("resources\imgs\Screenshot 2024-01-31 153140.png",use_column_width=True)
+            st.image("resources\imgs\top_cast_members.png",use_column_width=True)
             st.write("In the cinematic realm, Samuel L. Jackson stands as an iconic figure with a prolific career, leaving an indelible mark on audiences through his charismatic and versatile performances. Bruce Willis, celebrated for his diverse roles and on-screen presence, has garnered widespread recognition, showcasing his acting prowess in a variety of genres. Steve Buscemi, known for his ability to add depth and authenticity to films, distinguishes himself with unique characters and memorable portrayals, making significant contributions to the cinematic landscape. Exploring our extensive movie database reveals the pivotal role these outstanding cast members play, enhancing the overall viewing experience with their exceptional talents.") 
         #Count of top movie directors
         if eda_select == "Top Movie Directors":
-            st.image("resources\imgs\Screenshot 2024-02-01 105319.png",use_column_width=True)
+            st.image("resources\imgs\top_directors.png",use_column_width=True)
             st.write("Prominent directors in the dataset include Luc Besson, Woody Allen, Stephen King, and Ki-duk Kim. However, it's essential to note that William Shakespeare and Stephen King are recognized as writers, not directors. This distinction is crucial to consider during the modeling process, emphasizing the need for accuracy in attributing roles to individuals within the film industry. Understanding and respecting the distinct contributions of writers and directors will enhance the precision and reliability of our modeling endeavors.")           
         
               
