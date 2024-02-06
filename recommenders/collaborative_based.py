@@ -175,17 +175,17 @@ def collab_model(movie_list,top_n=10):
     idx_3 = indices[indices == movie_list[2]].index[0]
     
     # Creating a Series with the similarity scores in descending order
-    distances_1 = user_sim_df[idx_1]
-    distances_2 = user_sim_df[idx_2]
-    distances_3 = user_sim_df[idx_3]
+    rank_1 = user_sim_df[idx_1]
+    rank_2 = user_sim_df[idx_2]
+    rank_3 = user_sim_df[idx_3]
     
     # Calculating the scores
-    sim_score_1 = pd.Series(distances_1).sort_values(ascending = False)
-    sim_score_2 = pd.Series(distances_2).sort_values(ascending = False)
-    sim_score_3 = pd.Series(distances_3).sort_values(ascending = False)
+    sim_score_series_1 = pd.Series(rank_1).sort_values(ascending = False)
+    sim_score_series_2 = pd.Series(rank_2).sort_values(ascending = False)
+    sim_score_series_3 = pd.Series(rank_3).sort_values(ascending = False)
     
     # Appending the names of movies
-    score_listing = sim_score_1.append(sim_score_1).append(sim_score_2).append(sim_score_3).sort_values(ascending = False)
+    score_listing = sim_score_series_1.append(sim_score_series_1).append(sim_score_series_2).append(sim_score_series_3).sort_values(ascending = False)
     
     # Choose top 50
     top_50_indexes = list(score_listing.iloc[1:50].index)
