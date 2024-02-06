@@ -148,7 +148,7 @@ def main():
                 st.caption("Data Scientist")
                     
             with col6:
-                st.image('resources/imgs/IMG_20240126_102843_362.jpg', width= 200)
+                st.image('resources/imgs/FHULU.jpeg', width= 200)
                 st.subheader("Faith Fhulufhelo")
                 st.caption("Data Engineer")
 
