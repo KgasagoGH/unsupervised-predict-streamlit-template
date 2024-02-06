@@ -120,17 +120,17 @@ def main():
             col1, col2, col3 = st.columns(3)
 
             with col1:
-                st.image('resources\imgs\IMG_20240126_102843_362.jpg', width= 200)
+                st.image('resources/imgs/IMG_20240126_102843_362.jpg', width= 200)
                 st.subheader("Iloh Fransisca")
                 st.caption("Web Developer")
 
             with col2:
-                st.image('resources\imgs\mashoto.webp', width= 200)
+                st.image('resources/imgs/mashoto.webp', width= 200)
                 st.subheader("Mashoto Kgasago")
                 st.caption("Data Engineer")
                     
             with col3:
-                st.image('resources\imgs\IMG_4552.jpg', width= 200)
+                st.image('resources/imgs/IMG_4552.jpg', width= 200)
                 st.subheader("Mkhosi Myeni")
                 st.caption("Project Manager")
 
@@ -138,17 +138,17 @@ def main():
             col4, col5, col6 = st.columns(3)
 
             with col4:
-                st.image('resources\imgs\WhatsApp_Image_2023-11-15_at_15.41.44_2706cb67.jpg', width= 200)
+                st.image('resources/imgs/WhatsApp_Image_2023-11-15_at_15.41.44_2706cb67.jpg', width= 200)
                 st.subheader("Jonathan Thomson")
                 st.caption("Data Scientist")
 
             with col5:
-                st.image('resources\imgs\IMG_20240126_102843_362.jpg', width= 200)
+                st.image('resources/imgs/IMG_20240126_102843_362.jpg', width= 200)
                 st.subheader("Justice Mashako")
                 st.caption("Data Scientist")
                     
             with col6:
-                st.image('resources\imgs\IMG_20240126_102843_362.jpg', width= 200)
+                st.image('resources/imgs/IMG_20240126_102843_362.jpg', width= 200)
                 st.subheader("Faith Fhulufhelo")
                 st.caption("Data Engineer")
 
@@ -368,11 +368,11 @@ def main():
  
          #Count of top cast members
         if eda_select == "Top Cast Members":
-            st.image("resources\imgs\top_cast_members.png",use_column_width=True)
+            st.image("resources/imgs/top_cast_members.png",use_column_width=True)
             st.write("In the cinematic realm, Samuel L. Jackson stands as an iconic figure with a prolific career, leaving an indelible mark on audiences through his charismatic and versatile performances. Bruce Willis, celebrated for his diverse roles and on-screen presence, has garnered widespread recognition, showcasing his acting prowess in a variety of genres. Steve Buscemi, known for his ability to add depth and authenticity to films, distinguishes himself with unique characters and memorable portrayals, making significant contributions to the cinematic landscape. Exploring our extensive movie database reveals the pivotal role these outstanding cast members play, enhancing the overall viewing experience with their exceptional talents.") 
         #Count of top movie directors
         if eda_select == "Top Movie Directors":
-            st.image("resources\imgs\top_directors.png",use_column_width=True)
+            st.image("resources/imgs/top_directors.png",use_column_width=True)
             st.write("Prominent directors in the dataset include Luc Besson, Woody Allen, Stephen King, and Ki-duk Kim. However, it's essential to note that William Shakespeare and Stephen King are recognized as writers, not directors. This distinction is crucial to consider during the modeling process, emphasizing the need for accuracy in attributing roles to individuals within the film industry. Understanding and respecting the distinct contributions of writers and directors will enhance the precision and reliability of our modeling endeavors.")           
         
               
