@@ -143,7 +143,7 @@ def main():
                 st.caption("Data Scientist")
 
             with col5:
-                st.image('resources/imgs/IMG_20240126_102843_362.jpg', width= 200)
+                st.image('resources/imgs/Justice.webp', width= 200)
                 st.subheader("Justice Mashako")
                 st.caption("Data Scientist")
                     
